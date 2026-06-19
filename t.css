@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-darker: #0b0b0b;
+  --bg-dark: #121212;
+  --bg-card: #181818;
+  --neon-lime: #ccff00;
+  --text-light: #ffffff;
+  --text-gray: #a0a0a0;
+  --font-heading: "Anton", sans-serif;
+  --font-body: "Lexend", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-darker);
+  color: var(--text-light);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-header {
+  margin-bottom: 60px;
+  max-width: 550px;
+}
+
+.section-header h1 {
+  font-family: var(--font-heading);
+  font-size: 56px;
+  text-transform: uppercase;
+  color: var(--neon-lime);
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.section-header p {
+  color: var(--text-gray);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.trainers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.trainer-card {
+  background-color: var(--bg-card);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #1c1c1c;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.trainer-card:hover {
+  transform: translateY(-5px);
+  border-color: #2a2a2a;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  background-color: #000;
+}
+
+.trainer-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 14px;
+  border-radius: 20px;
+}
+
+.badge-strength {
+  background-color: rgba(155, 185, 23, 0.4);
+  color: #bbf233;
+  border: 1px solid rgba(154, 185, 23, 0.4);
+}
+
+.badge-mobility {
+  background-color: rgba(186, 93, 56, 0.4);
+  color: #ff8b57;
+  border: 1px solid rgba(186, 93, 56, 0.4);
+}
+
+.badge-hiit {
+  background-color: rgba(144, 163, 16, 0.4);
+  color: #d1ec2d;
+  border: 1px solid rgba(144, 163, 16, 0.4);
+}
+.card-content {
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-content h2 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  color: var(--neon-lime);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.card-content h3 {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--text-gray);
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.card-content p {
+  color: var(--text-gray);
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.card-footer {
+  border-top: 1px solid #1f1f1f;
+  padding-top: 20px;
+  display: flex;
+  gap: 18px;
+}
+
+.card-footer a {
+  color: #666666;
+  font-size: 15px;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.card-footer a:hover {
+  color: var(--neon-lime);
+}
+
+@media (max-width: 992px) {
+  .trainers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-header h1 {
+    font-size: 42px;
+  }
+  .trainers-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
