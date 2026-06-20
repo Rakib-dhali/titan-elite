@@ -35,3 +35,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const contactForm = document.getElementById("contactForm");
+
+    if (contactForm) {
+        contactForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            
+            const nameVal = document.getElementById("name").value;
+
+            alert(`Thank you, ${nameVal}! Your message has been routed to the Titan Elite staff.`);
+            
+            contactForm.reset();
+        });
+    }
+});
