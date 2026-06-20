@@ -1,57 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&display=swap");
+@import url("./shared.css");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-:root {
-  --bg-darker: #0b0b0b;
-  --bg-dark: #121212;
-  --bg-card: #181818;
-  --neon-lime: #ccff00;
-  --text-light: #ffffff;
-  --text-gray: #a0a0a0;
-  --font-heading: "Anton", sans-serif;
-  --font-body: "Lexend", sans-serif;
-}
-
-body {
-  font-family: var(--font-body);
-  background-color: var(--bg-darker);
-  color: var(--text-light);
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
+.membership-section {
+  padding-top: 130px;
+  padding-bottom: 0;
 }
 
 .small-container {
   max-width: 800px;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 70px;
-}
-
-.section-header h1 {
-  font-family: var(--font-heading);
-  font-size: 54px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
-}
-
-.section-header p {
-  color: var(--text-gray);
-  font-size: 14px;
-  max-width: 580px;
-  margin: 0 auto;
-  font-weight: 400;
 }
 
 .pricing-grid {
@@ -137,39 +92,17 @@ body {
   font-size: 14px;
 }
 
-.btn {
+/* Override btn for full-width cards */
+.price-card .btn {
   width: 100%;
-  padding: 14px;
-  font-family: var(--font-heading);
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  text-align: center;
 }
 
-.btn-outline {
-  background-color: transparent;
-  color: var(--text-white);
+.price-card .btn-outline {
   border: 1px solid #444;
 }
-
-.btn-outline:hover {
-  background-color: var(--text-white);
-  color: #000;
-  border-color: var(--text-white);
-}
-
-.btn-lime {
-  background-color: var(--neon-lime);
-  color: #000;
-  border: none;
-}
-
-.btn-lime:hover {
-  background-color: #b3df00;
+.price-card .btn-outline:hover {
+  border-color: var(--text-light);
 }
 
 .faq-section {

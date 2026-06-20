@@ -1,76 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titan Elite - Expert Trainers</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./t.css">
-</head>
-<body>
+  <head>
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRAINERS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./shared.css" />
+    <link rel="stylesheet" href="./t.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <a href="./index.html" class="logo">TITAN ELITE</a>
+        <ul class="nav-links">
+          <li><a href="./index.html" class="">Home</a></li>
+          <li><a href="./m.html" class="">Membership</a></li>
+          <li><a href="./t.html" class="active">Trainers</a></li>
+          <li><a href="./c.html" class="">Contact</a></li>
+        </ul>
+        <a href="#" class="btn btn-lime nav-btn">Join Now</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
 
     <section class="trainers-section">
-        <div class="container">
-            
-            <div class="section-header">
-                <h1>Expert Trainers</h1>
-                <p>Push your limits with our elite coaching staff. Specialized in strength, mobility, and high-intensity conditioning to help you achieve professional-grade results.</p>
-            </div>
-
-            <div class="trainers-grid">
-                
-                <div class="trainer-card">
-                    <div class="image-container">
-                        <img src="./assets//port1.png" alt="Mark Hudson" class="trainer-img">
-                        <span class="badge badge-strength">Strength</span>
-                    </div>
-                    <div class="card-content">
-                        <h2>Mark Hudson</h2>
-                        <h3>Strength & Conditioning</h3>
-                        <p>Former collegiate athlete specializing in heavy compound lifts and functional mass building. Mark's disciplined approach guarantees measurable strength gains.</p>
-                        <div class="card-footer">
-                            <a href="#" aria-label="Profile"><i class="fa-regular fa-user"></i></a>
-                            <a href="#" aria-label="Contact"><i class="fa-regular fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="trainer-card">
-                    <div class="image-container">
-                        <img src="./assets//port3.png" alt="Elena Rossi" class="trainer-img">
-                        <span class="badge badge-mobility">Mobility</span>
-                    </div>
-                    <div class="card-content">
-                        <h2>Elena Rossi</h2>
-                        <h3>Yoga & Mobility</h3>
-                        <p>Mastering the balance between flexibility and core stability. Elena's sessions are crucial for active recovery and injury prevention in high-performance athletes.</p>
-                        <div class="card-footer">
-                            <a href="#" aria-label="Profile"><i class="fa-regular fa-user"></i></a>
-                            <a href="#" aria-label="Contact"><i class="fa-regular fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="trainer-card">
-                    <div class="image-container">
-                        <img src="./assets//port2.png" alt="Jake Thorne" class="trainer-img">
-                        <span class="badge badge-hiit">Hiit</span>
-                    </div>
-                    <div class="card-content">
-                        <h2>Jake Thorne</h2>
-                        <h3>Crossfit & HIIT</h3>
-                        <p>Relentless intensity and cardiovascular endurance. Jake pushes you past your perceived limits with dynamic, high-octane circuit training.</p>
-                        <div class="card-footer">
-                            <a href="#" aria-label="Profile"><i class="fa-regular fa-user"></i></a>
-                            <a href="#" aria-label="Contact"><i class="fa-regular fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h1>Expert Trainers</h1>
+          <p>
+            Push your limits with our elite coaching staff. Specialized in
+            strength, mobility, and high-intensity conditioning to help you
+            achieve professional-grade results.
+          </p>
         </div>
+
+        <div class="trainers-grid">
+          <div class="trainer-card">
+            <div class="image-container">
+              <img
+                src="./assets//port1.png"
+                alt="Mark Hudson"
+                class="trainer-img"
+              />
+              <span class="badge badge-strength">Strength</span>
+            </div>
+            <div class="card-content">
+              <h2>Mark Hudson</h2>
+              <h3>Strength & Conditioning</h3>
+              <p>
+                Former collegiate athlete specializing in heavy compound lifts
+                and functional mass building. Mark's disciplined approach
+                guarantees measurable strength gains.
+              </p>
+              <div class="card-footer">
+                <a href="#" aria-label="Profile"
+                  ><i class="fa-regular fa-user"></i
+                ></a>
+                <a href="#" aria-label="Contact"
+                  ><i class="fa-regular fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="trainer-card">
+            <div class="image-container">
+              <img
+                src="./assets//port3.png"
+                alt="Elena Rossi"
+                class="trainer-img"
+              />
+              <span class="badge badge-mobility">Mobility</span>
+            </div>
+            <div class="card-content">
+              <h2>Elena Rossi</h2>
+              <h3>Yoga & Mobility</h3>
+              <p>
+                Mastering the balance between flexibility and core stability.
+                Elena's sessions are crucial for active recovery and injury
+                prevention in high-performance athletes.
+              </p>
+              <div class="card-footer">
+                <a href="#" aria-label="Profile"
+                  ><i class="fa-regular fa-user"></i
+                ></a>
+                <a href="#" aria-label="Contact"
+                  ><i class="fa-regular fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="trainer-card">
+            <div class="image-container">
+              <img
+                src="./assets//port2.png"
+                alt="Jake Thorne"
+                class="trainer-img"
+              />
+              <span class="badge badge-hiit">Hiit</span>
+            </div>
+            <div class="card-content">
+              <h2>Jake Thorne</h2>
+              <h3>Crossfit & HIIT</h3>
+              <p>
+                Relentless intensity and cardiovascular endurance. Jake pushes
+                you past your perceived limits with dynamic, high-octane circuit
+                training.
+              </p>
+              <div class="card-footer">
+                <a href="#" aria-label="Profile"
+                  ><i class="fa-regular fa-user"></i
+                ></a>
+                <a href="#" aria-label="Contact"
+                  ><i class="fa-regular fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

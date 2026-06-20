@@ -1,52 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&display=swap");
+@import url("./shared.css");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-:root {
-  --bg-darker: #0b0b0b;
-  --bg-dark: #121212;
-  --bg-card: #181818;
-  --neon-lime: #ccff00;
-  --text-light: #ffffff;
-  --text-gray: #a0a0a0;
-  --font-heading: "Anton", sans-serif;
-  --font-body: "Lexend", sans-serif;
-}
-
-body {
-  font-family: var(--font-body);
-  background-color: var(--bg-darker);
-  color: var(--text-light);
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
+.trainers-section {
+  padding-top: 130px;
+  padding-bottom: 80px;
 }
 
 .section-header {
+  text-align: left;
   margin-bottom: 60px;
   max-width: 550px;
 }
 
 .section-header h1 {
-  font-family: var(--font-heading);
-  font-size: 56px;
-  text-transform: uppercase;
   color: var(--neon-lime);
-  letter-spacing: 0.5px;
-  margin-bottom: 15px;
+  font-size: 56px;
   line-height: 1.1;
 }
 
 .section-header p {
-  color: var(--text-gray);
-  font-size: 14px;
+  max-width: none;
+  margin: 0;
   line-height: 1.6;
 }
 
