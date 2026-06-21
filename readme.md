@@ -5,10 +5,22 @@ Titan Elite is a premium, high-performance fitness facility website featuring a 
 ## 🚀 Live Preview & Pages
 
 The project consists of four primary pages:
-- **Home (`index.html`)**: Features hero statements, key stats, features/benefits, and community testimonials.
-- **Membership (`m.html`)**: Highlights tier-based pricing plans (Basic, Premium, Elite) and a functional FAQ accordion.
-- **Trainers (`t.html`)**: Showcases our expert coaches, their fields of expertise (Strength, Mobility, HIIT), and their professional backgrounds.
-- **Contact (`c.html`)**: Includes a dynamic contact form, location details, facility hours, and an embedded interactive Google Map.
+
+### 🏠 Home Page (`index.html`)
+Features hero statements, key stats, features/benefits, and community testimonials.
+![Home Page](./preview/home.png)
+
+### 💳 Membership Page (`m.html`)
+Highlights tier-based pricing plans (Basic, Premium, Elite) and a functional FAQ accordion.
+![Membership Page](./preview/membership.png)
+
+### 🏋️ Trainers Page (`t.html`)
+Showcases our expert coaches, their fields of expertise (Strength, Mobility, HIIT), and their professional backgrounds.
+![Trainers Page](./preview/trainers.png)
+
+### 📞 Contact Page (`c.html`)
+Includes a dynamic contact form, location details, facility hours, and an embedded interactive Google Map.
+![Contact Page](./preview/contact.png)
 
 ## 🛠️ Technology Stack
 
@@ -16,7 +28,7 @@ The project consists of four primary pages:
 - **CSS3 (Custom Stylings)**: Uses HSL-tailored custom variables, CSS grids, flexboxes, blur effects, glassmorphic navigations, and responsiveness.
 - **JavaScript (ES6)**: Handles mobile navigation sidebar toggle, FAQs interactive accordion, and dynamic contact form submissions.
 - **FontAwesome**: High-quality vector icons for utility indicators and social links.
-- **Google Fonts**: Modern and bold typography featuring *Anton* for headings and *Lexend* for copy.
+- **Google Fonts**: Modern and bold typography featuring _Anton_ for headings and _Lexend_ for copy.
 
 ## 📁 Project Structure
 

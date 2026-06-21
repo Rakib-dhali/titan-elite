@@ -9,6 +9,7 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --bg-darker: #0b0b0b;
   --bg-dark: #121212;
@@ -54,6 +55,7 @@ body {
   color: #000;
   border: 2px solid var(--neon-lime);
 }
+
 .btn-lime:hover {
   background-color: transparent;
   color: var(--neon-lime);
@@ -64,6 +66,7 @@ body {
   color: var(--text-light);
   border: 2px solid var(--text-light);
 }
+
 .btn-outline:hover {
   background-color: var(--text-light);
   color: #000;
@@ -136,6 +139,7 @@ header {
   letter-spacing: 1.5px;
   transition: color 0.3s;
 }
+
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--neon-lime);
@@ -158,6 +162,7 @@ header {
   transition: color 0.3s ease;
   padding: 5px;
 }
+
 .menu-toggle:hover {
   color: var(--neon-lime);
 }
